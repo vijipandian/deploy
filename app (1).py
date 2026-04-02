@@ -4,7 +4,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.express as px
-
+%%writefile requirements.txt
+streamlit
+pandas
+matplotlib
+seaborn
+plotly
 
 users=pd.read_csv("/content/EduPro Online Platform.xlsx - Users.csv")
 users.head(2)
