@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.express as px
-%%writefile requirements.txt
+
 
 
 users=pd.read_csv("/content/EduPro Online Platform.xlsx - Users.csv")
