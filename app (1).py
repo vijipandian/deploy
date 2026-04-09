@@ -7,17 +7,17 @@ import plotly.express as px
 
 
 
-users=pd.read_csv("/content/EduPro Online Platform.xlsx - Users.csv")
+users=pd.read_csv("EduPro Online Platform.xlsx - Users.csv")
 st.write(users.head(2))
 
-teacher=pd.read_csv("/content/EduPro Online Platform.xlsx - Teachers.csv")
-teacher.head(2)
+teacher=pd.read_csv("EduPro Online Platform.xlsx - Teachers.csv")
+st.write(teacher.head(2))
 
-course=pd.read_csv("/content/EduPro Online Platform.xlsx - Courses.csv")
-course.head(2)
+course=pd.read_csv("EduPro Online Platform.xlsx - Courses.csv")
+st.write(course.head(2))
 
-transcation=pd.read_csv("/content/EduPro Online Platform.xlsx - Transactions.csv")
-transcation.head(2)
+transcation=pd.read_csv("EduPro Online Platform.xlsx - Transactions.csv")
+st.write(transcation.head(2))
 
 data=(transcation.merge(teacher,on="TeacherID",how="left")\
                 .merge(course,on="CourseID",how="left")\
