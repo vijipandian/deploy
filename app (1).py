@@ -8,7 +8,7 @@ import plotly.express as px
 
 
 users=pd.read_csv("/content/EduPro Online Platform.xlsx - Users.csv")
-users.head(2)
+st.write(users.head(2))
 
 teacher=pd.read_csv("/content/EduPro Online Platform.xlsx - Teachers.csv")
 teacher.head(2)
