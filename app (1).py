@@ -9,16 +9,16 @@ from google.colab import files
 
 
 users=pd.read_csv("Users.csv")
-st.write(users.head(2))
+print(users.head(2))
 
 teacher=pd.read_csv("Teachers.csv")
-st.write(teacher.head(2))
+print(teacher.head(2))
 
 course=pd.read_csv("Courses.csv")
-st.write(course.head(2))
+print(course.head(2))
 
 transcation=pd.read_csv("Transactions.csv")
-st.write(transcation.head(2))
+print(transcation.head(2))
 
 data=(transcation.merge(teacher,on="TeacherID",how="left")\
                 .merge(course,on="CourseID",how="left")\
