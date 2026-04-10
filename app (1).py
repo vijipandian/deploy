@@ -6,7 +6,7 @@ import seaborn as sns
 import plotly.express as px
 
 from google.colab import files
-uploaded=files.upload()
+
 
 users=pd.read_csv("Users.csv")
 st.write(users.head(2))
