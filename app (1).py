@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.express as px
 
-from google.colab import files
+
 
 
 users=pd.read_csv("Users.csv")
