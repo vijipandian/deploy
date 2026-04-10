@@ -4,8 +4,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.express as px
-
-
+import os
+st.write("Files availabel:", os.listdir())
 
 
 users=pd.read_csv("Users.csv")
